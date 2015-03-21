@@ -273,7 +273,7 @@ That `endpoint` block in our Ruby class will get executed with the params passed
 
 ## Wrapping it up
 
-I won't go here into the somewhat boring details about how to embed the components that we created into Rails views, for this you may turn to the last part of the [Hello World](https://github.com/netzke/netzke-core#helloworld-component) section in the Netzke Core README. It's dead simple anyway. Instead I'll point you to the [final source code]() for this app, which will embed all 3 components in the root page of the Rails app.
+I won't go here into the somewhat boring details about how to embed the components that we created into Rails views, for this you may turn to the last part of the [Hello World](https://github.com/netzke/netzke-core#helloworld-component) section in the Netzke Core README. It's dead simple anyway. Instead I'll point you to the [final source code](https://github.com/mxgrn/netzke-bookshelf) for this app, which will embed the final component in the root page of the Rails app.
 
 And if you feel hooked, check out these 2 demo apps that will be insightful for you should you decide to start using Netzke in your projects:
 
