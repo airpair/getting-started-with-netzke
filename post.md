@@ -43,7 +43,7 @@ The `netzke` method sets up routes needed for communication between client and s
 We'll build a little personal bookshelf app, let's start with generating the 2 models for it:
 
     $ rails g model author name
-    $ rails g model book author_id:integer title exemplars:integer completed:boolean
+    $ rails g model book author_id:references title exemplars:integer completed:boolean
     
 Run the migrations:
 
