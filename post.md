@@ -241,7 +241,7 @@ class AuthorsAndBooks < Netzke::Basepack::Viewport
   end
 
   # This "gets called" by the client side
-  endpoint :server_update_author do |params, this|
+  endpoint :server_set_author do |params, this|
     # params[:author_id] comes from the client side of the component (see the Javascript code below)
     component_session[:current_author_id] = params[:author_id]
   end
