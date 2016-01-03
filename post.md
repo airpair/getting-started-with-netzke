@@ -105,7 +105,7 @@ Note that the grid has picked up the Author association without any configuratio
 As you may expect, our grids are highly configurable, and many configuration options can be found in the [documentation](http://www.rubydoc.info/github/netzke/netzke-basepack/Netzke/Grid/Base). Let us, for instance, make a few changes into the Books grid, customizing the columns and the button bar:
 
 ```ruby
-class Books < Netzke::Basepack::Grid
+class Books < Netzke::Grid::Base
   def configure(c)
     super
 
@@ -251,11 +251,13 @@ On the server we configure our books grid to scope out to the selected author. T
 
 ## Wrapping it up
 
-I won't go here into the somewhat boring details about how to embed the components that we created into Rails views, for this you may turn to the last part of the [Hello World](https://github.com/netzke/netzke#helloworld-component) section in Netzke README (it's dead simple). Instead I'll point you to the [final source code](https://github.com/mxgrn/netzke-bookshelf) for this app, which will embed the final component in the root page of the Rails app.
+I won't go here into the somewhat boring details about how to embed the components that we created into Rails views, for this you may turn to the last part of the [Hello World](https://github.com/netzke/netzke#helloworld-component) section in Netzke README (it's dead simple). Instead, I'll point you to the [final source code](https://github.com/mxgrn/netzke-bookshelf) for this app, which will embed the final component in the root page of the Rails app.
 
 And if you feel hooked, check out these 2 demo apps that will be insightful for you should you decide to start using Netzke in your projects:
 
-* [Official demo](http://demo.netzke.org) shows off a few components, with links to their respective source code for convenience
-* [Yanit](http://yanit.netzke.org) is an issue tracking app that I initially created in just a couple of hours for a conference talk. It's not usable in real life, I guess, but it's impressive anyway, and is a good source of example code.
+* [Official demo](http://demo.netzke.org) shows off a few components, with links to their respective source code for
+    convenience
+
+* [Yanit](http://yanit.netzke.org) is an issue tracking app that I initially created in just a couple of hours for a conference talk. It's not usable in real life, I guess, but it's impressive anyway, and is good source of example code.
 
 Thanks, and give me some feedback on [Twitter](http://twitter.com/mxgrn)!
